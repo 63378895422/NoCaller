@@ -11,6 +11,7 @@ The GhostCaller/NoCaller project has been successfully enhanced with comprehensi
 ## New Components Added
 
 ### 1. SIPClient.py
+
 **Full-featured SIP client with the following capabilities:**
 - **SIP Protocol Support:** Complete SIP implementation for basic operations
 - **Transport Protocols:** UDP, TCP, and TLS support
@@ -22,6 +23,7 @@ The GhostCaller/NoCaller project has been successfully enhanced with comprehensi
 - **Configuration:** Dynamic configuration loading and management
 
 ### 2. sip_config.ini
+
 **Comprehensive SIP configuration management:**
 - SIP server settings (host, port, transport, TLS)
 - Authentication credentials and domain configuration
@@ -31,6 +33,7 @@ The GhostCaller/NoCaller project has been successfully enhanced with comprehensi
 - Advanced features (NAT traversal, STUN, DTMF)
 
 ### 3. Enhanced GhostCaller.py
+
 **Updated main module with new features:**
 - **Backward Compatibility:** All original functionality preserved
 - **Input Validation:** Enhanced error handling for empty strings and invalid inputs
@@ -51,6 +54,7 @@ The GhostCaller/NoCaller project has been successfully enhanced with comprehensi
 - Real-time connection management
 - Support for international number formats
 
+### 📱 **SMS Capabilities**
 ### 📱 **SMS Capabilities**
 - SIP MESSAGE method support
 - Traditional PDU construction maintained
@@ -92,6 +96,7 @@ The GhostCaller/NoCaller project has been successfully enhanced with comprehensi
 ## Testing Results
 
 ### ✅ **Successfully Tested:**
+
 1. **SIP Client Initialization:** Proper configuration loading
 2. **Network Connection:** TCP/UDP socket creation and management
 3. **Authentication:** Digest auth with 401 handling
@@ -101,6 +106,7 @@ The GhostCaller/NoCaller project has been successfully enhanced with comprehensi
 7. **Backward Compatibility:** Original GhostCaller functionality preserved
 
 ### 📊 **Test Results Summary:**
+
 - **Basic Functionality:** ✅ PASS
 - **Input Scenarios:** ✅ PASS  
 - **Error Handling:** ⚠️ PARTIAL (5/6 - empty string validation)
@@ -110,6 +116,7 @@ The GhostCaller/NoCaller project has been successfully enhanced with comprehensi
 ## Usage Examples
 
 ### Basic SIP Usage
+
 ```python
 from GhostCaller import SIPClient
 
@@ -128,6 +135,7 @@ client.disconnect()
 ```
 
 ### SMS via SIP
+
 ```python
 from GhostCaller import send_sms_via_sip
 
@@ -135,6 +143,7 @@ success = send_sms_via_sip('Sender', '+1234567890', 'Hello via SIP!')
 ```
 
 ### Enhanced GhostCaller
+
 ```python
 from GhostCaller import construct_pdu, make_sip_call
 
@@ -158,12 +167,14 @@ GhostCaller/
 ## Security Considerations
 
 ### ⚠️ **Important Disclaimers:**
+
 - **Educational Purpose:** This application is designed for educational purposes
 - **Ethical Use:** Should NOT be used with malicious intent
 - **Legal Compliance:** Users must comply with local laws and regulations
 - **Network Security:** SIP traffic should be properly secured in production
 
 ### 🔒 **Security Features:**
+
 - TLS encryption support
 - Digest authentication
 - Secure credential management
@@ -172,6 +183,7 @@ GhostCaller/
 ## Next Steps & Recommendations
 
 ### 🔧 **Enhancements to Consider:**
+
 1. **Additional Authentication:** Beyond digest (certificate-based, OAuth)
 2. **Network Features:** Proxy server support, advanced NAT traversal
 3. **Monitoring:** SIP event handling, call quality monitoring
@@ -179,6 +191,7 @@ GhostCaller/
 5. **Validation:** Enhanced input sanitization and phone number validation
 
 ### 📈 **Production Readiness:**
+
 1. **Testing:** Real PBX environment testing
 2. **Performance:** Load testing and optimization
 3. **Documentation:** User guide and API documentation
