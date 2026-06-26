@@ -2,7 +2,7 @@ import binascii
 import configparser
 import os
 from SIPClient import SIPClient
-#NoCaller an Android CallerID spoofer developed by Deccatron, If you are confused why sometimes, the term GhostCaller is used its because i changed the corny ass name to no caller...
+#NoCaller: an Android CallerID spoofer developed by Deccatron; if you are confused why sometimes the term GhostCaller is used, it's because I changed the corny-ass name to NoCaller...
 
 def construct_pdu(sender, recipient, message):
     """Construct SMS PDU with proper validation"""
